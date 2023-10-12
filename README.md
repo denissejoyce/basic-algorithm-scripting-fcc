@@ -7,3 +7,14 @@ function convertCtoF(celsius) {
   return fahrenheit = (celsius*(9/5))+32;
 };
 ```
+
+### Factorialize a Number
+```javascript
+function factorialize(num){
+	if(num == 0){
+		return 1;
+	} else {
+		return num * factorialize(num-1);
+	}
+}
+```
