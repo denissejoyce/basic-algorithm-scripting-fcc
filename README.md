@@ -13,10 +13,10 @@ function convertCtoF(celsius) {
 function reverseString(str) {
     let temp = ``;
     for (let i = str.length-1; i > -1; i--){
-    temp += str[i];
-		}
-		str = temp;
-		return str;
+    	temp += str[i];
+    }
+    str = temp;
+    return str;
 }
 ```
 
