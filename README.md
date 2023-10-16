@@ -48,3 +48,15 @@ function findLongestWordLength(str) {
   	return str.length;
 }
 ```
+
+### Return Largest Numbers in Arrays
+```javascript
+function largestOfFour(arr) {
+  let temp = [];
+  for(let i=0; i<arr.length; i++){
+      temp.push(Math.max(...arr[i]));
+  }
+  arr = temp;
+  return arr;
+}
+```
