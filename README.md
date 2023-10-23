@@ -67,3 +67,14 @@ function confirmEnding(str, target) {
   return (str.slice(str.length-target.length)==target);
 }
 ```
+
+### Repeat a String Repeat a String
+```javascript
+function repeatStringNumTimes(str, num){
+    if(num <= 0){
+        return "";
+    } else {
+        return str + repeatStringNumTimes(str, num-1);
+    }
+}
+```
