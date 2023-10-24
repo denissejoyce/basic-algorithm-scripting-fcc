@@ -78,3 +78,11 @@ function repeatStringNumTimes(str, num){
     }
 }
 ```
+
+### Truncate a String
+```javascript
+function truncateString(str, num) {
+  return (str.length <= num) ? str
+  : str = (`${str.slice(0, num)}...`);
+}
+```
