@@ -86,3 +86,16 @@ function truncateString(str, num) {
   : str = (`${str.slice(0, num)}...`);
 }
 ```
+
+### Finders Keepers
+```javascript
+function findElement(arr, func) {
+  let num = 0;
+  for(let elem of arr){
+      if (func(elem)){
+          return num = elem;
+      }
+  }
+  return undefined;  
+}
+```
