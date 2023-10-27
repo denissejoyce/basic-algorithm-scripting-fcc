@@ -106,3 +106,15 @@ function booWho(bool) {
   return (typeof(bool) === "boolean") ? true : false;
 }
 ```
+
+### Title Case a Sentence
+```javascript
+function titleCase(str) {
+    str = str.toLowerCase();
+    str = str.split(" ");
+    for(let i=0; i<str.length; i++){
+        str[i] = str[i].charAt(0).toUpperCase().concat(str[i].slice(1));
+    }
+    return str.join(" ");
+}
+```
