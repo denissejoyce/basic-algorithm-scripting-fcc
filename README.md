@@ -110,8 +110,7 @@ function booWho(bool) {
 ### Title Case a Sentence
 ```javascript
 function titleCase(str) {
-    str = str.toLowerCase();
-    str = str.split(" ");
+    str = str.toLowerCase().split(" ");
     for(let i=0; i<str.length; i++){
         str[i] = str[i].charAt(0).toUpperCase().concat(str[i].slice(1));
     }
