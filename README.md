@@ -126,3 +126,10 @@ function frankenSplice(arr1, arr2, n) {
   return temp;
 }
 ```
+
+### Falsy Bouncer
+```javascript
+function bouncer(arr) {
+  return arr.filter((arr) => (!!arr));
+}
+```
