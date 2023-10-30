@@ -133,3 +133,15 @@ function bouncer(arr) {
   return arr.filter((arr) => (!!arr));
 }
 ```
+
+### Where do I Belong
+```javascript
+function getIndexToIns(arr, num) {
+  if(arr.indexOf(num) < 0){
+      arr.push(num);
+  }
+  return arr.sort(sortAscend).indexOf(num);
+}
+
+function sortAscend(a,b){ return a - b; }
+```
