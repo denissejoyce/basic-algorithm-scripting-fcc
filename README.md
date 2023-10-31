@@ -145,3 +145,17 @@ function getIndexToIns(arr, num) {
 
 function sortAscend(a,b){ return a - b; }
 ```
+
+### Mutations
+```javascript
+function mutation(arr) {
+  let arr1 = arr[0].toLowerCase().split(""),
+      arr2 = arr[1].toLowerCase().split("");
+  for(let item of arr2){
+      if(arr1.indexOf(item) < 0){
+          return false;
+      }
+  }
+  return true;
+}
+```
